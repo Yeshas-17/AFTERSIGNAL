@@ -1,0 +1,616 @@
+{
+  "datasetName": "AFTERSIGNAL ProtocolX Ground Truth Benchmark Suite",
+  "version": "1.0",
+  "totalMessages": 50,
+  "scenarios": [
+    {
+      "id": "scenario_product_launch",
+      "title": "Product Launch Emergency Sync",
+      "description": "Team dealing with database migration issues and launch time changes."
+    },
+    {
+      "id": "scenario_hackathon_prep",
+      "title": "ProtocolX Hackathon Team Sync",
+      "description": "Deciding architecture, stack, UI layout, and assignment."
+    },
+    {
+      "id": "scenario_design_revision",
+      "title": "Design Revision & Brand Colors",
+      "description": "Debate on dark mode theme and accent colors."
+    },
+    {
+      "id": "scenario_messy_casual",
+      "title": "Messy Off-topic Chat",
+      "description": "Casual chatter with hidden open loops and non-decision suggestions."
+    },
+    {
+      "id": "scenario_malformed_edge",
+      "title": "Malformed & Edge Case Inputs",
+      "description": "Messages with missing fields, empty strings, and special characters."
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_001",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Alice",
+      "timestamp": "2026-10-09T08:00:00.000Z",
+      "content": "Good morning team. We need to decide on the database migration schedule today."
+    },
+    {
+      "id": "msg_002",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Bob",
+      "timestamp": "2026-10-09T08:05:00.000Z",
+      "content": "What if we delay the migration to 6 PM UTC?"
+    },
+    {
+      "id": "msg_003",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Charlie",
+      "timestamp": "2026-10-09T08:10:00.000Z",
+      "content": "Great idea. We decided to execute the DB migration at 6 PM UTC."
+    },
+    {
+      "id": "msg_004",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Alice",
+      "timestamp": "2026-10-09T08:30:00.000Z",
+      "content": "Who is handling the backup script verification?"
+    },
+    {
+      "id": "msg_005",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Dave",
+      "timestamp": "2026-10-09T09:00:00.000Z",
+      "content": "Emergency update! Migration at 6 PM is blocked by staging checks. Change from 6 PM to 9 PM UTC instead."
+    },
+    {
+      "id": "msg_006",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Alice",
+      "timestamp": "2026-10-09T09:05:00.000Z",
+      "content": "Understood. The new migration time is confirmed for 9 PM UTC."
+    },
+    {
+      "id": "msg_007",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Bob",
+      "timestamp": "2026-10-09T09:15:00.000Z",
+      "content": "I finished verifying the backup script. DB backup check complete."
+    },
+    {
+      "id": "msg_008",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Charlie",
+      "timestamp": "2026-10-09T09:20:00.000Z",
+      "content": "Can someone update the status page before 8 PM?"
+    },
+    {
+      "id": "msg_009",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Dave",
+      "timestamp": "2026-10-09T09:25:00.000Z",
+      "content": "I will handle the status page update by 8 PM."
+    },
+    {
+      "id": "msg_010",
+      "scenarioId": "scenario_product_launch",
+      "sender": "Alice",
+      "timestamp": "2026-10-09T09:30:00.000Z",
+      "content": "What is the rollback strategy if step 3 fails?"
+    },
+
+    {
+      "id": "msg_011",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Elena",
+      "timestamp": "2026-10-09T10:00:00.000Z",
+      "content": "For AFTERSIGNAL, we agreed to use React, Vite, and Tailwind CSS for the frontend."
+    },
+    {
+      "id": "msg_012",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Frank",
+      "timestamp": "2026-10-09T10:10:00.000Z",
+      "content": "Maybe we could use Next.js instead?"
+    },
+    {
+      "id": "msg_013",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Grace",
+      "timestamp": "2026-10-09T10:15:00.000Z",
+      "content": "No, let's stick with Vite SPA for simple local bundling. We decided on Vite."
+    },
+    {
+      "id": "msg_014",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Elena",
+      "timestamp": "2026-10-09T10:30:00.000Z",
+      "content": "Frank, please build the Chat Ingestion Parser by 2 PM tomorrow."
+    },
+    {
+      "id": "msg_015",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Frank",
+      "timestamp": "2026-10-09T10:35:00.000Z",
+      "content": "Sure, I am on it."
+    },
+    {
+      "id": "msg_016",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Grace",
+      "timestamp": "2026-10-09T11:00:00.000Z",
+      "content": "We need someone to write unit tests for Chrono Parser."
+    },
+    {
+      "id": "msg_017",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Henry",
+      "timestamp": "2026-10-09T11:15:00.000Z",
+      "content": "I finished writing the unit tests for Chrono Parser."
+    },
+    {
+      "id": "msg_018",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Elena",
+      "timestamp": "2026-10-09T11:30:00.000Z",
+      "content": "Correction on the model choice: We decided on SmolLM2-360M instead of Qwen2.5-1.5B."
+    },
+    {
+      "id": "msg_019",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Frank",
+      "timestamp": "2026-10-09T11:45:00.000Z",
+      "content": "Should we host the demo on Vercel or local preview?"
+    },
+    {
+      "id": "msg_020",
+      "scenarioId": "scenario_hackathon_prep",
+      "sender": "Grace",
+      "timestamp": "2026-10-09T12:00:00.000Z",
+      "content": "Local preview only. No cloud deployments."
+    },
+
+    {
+      "id": "msg_021",
+      "scenarioId": "scenario_design_revision",
+      "sender": "Ian",
+      "timestamp": "2026-10-09T12:15:00.000Z",
+      "content": "We decided on Light Mode theme initially."
+    },
+    {
+      "id": "msg_022",
+      "scenarioId": "scenario_design_revision",
+      "sender": "Julia",
+      "timestamp": "2026-10-09T12:30:00.000Z",
+      "content": "How about purple gradient for cards?"
+    },
+    {
+      "id": "scenario_design_revision_msg_023",
+      "id": "msg_023",
+      "sender": "Ian",
+      "timestamp": "2026-10-09T12:45:00.000Z",
+      "content": "Actually, scratch Light Mode. We are moving to Dark Mode glassmorphic theme instead."
+    },
+    {
+      "id": "msg_024",
+      "sender": "Kevin",
+      "scenarioId": "scenario_design_revision",
+      "timestamp": "2026-10-09T13:00:00.000Z",
+      "content": "Alice says accent color is Cyan, but Bob says accent color is Emerald."
+    },
+    {
+      "id": "msg_025",
+      "sender": "Julia",
+      "scenarioId": "scenario_design_revision",
+      "timestamp": "2026-10-09T13:15:00.000Z",
+      "content": "Who will design the Evidence Drawer component?"
+    },
+    {
+      "id": "msg_026",
+      "sender": "Ian",
+      "scenarioId": "scenario_design_revision",
+      "timestamp": "2026-10-09T13:30:00.000Z",
+      "content": "I completed the wireframe mockups for Evidence Drawer."
+    },
+    {
+      "id": "msg_027",
+      "sender": "Kevin",
+      "scenarioId": "scenario_design_revision",
+      "timestamp": "2026-10-09T13:45:00.000Z",
+      "content": "Please review the dark mode contrast ratio by 5 PM."
+    },
+    {
+      "id": "msg_028",
+      "sender": "Julia",
+      "scenarioId": "scenario_design_revision",
+      "timestamp": "2026-10-09T14:00:00.000Z",
+      "content": "To clarify, the font hierarchy uses Inter for UI text and JetBrains Mono for code snippets."
+    },
+    {
+      "id": "msg_029",
+      "sender": "Ian",
+      "scenarioId": "scenario_design_revision",
+      "timestamp": "2026-10-09T14:15:00.000Z",
+      "content": "Did we finalize the logo SVG export?"
+    },
+    {
+      "id": "msg_030",
+      "sender": "Kevin",
+      "scenarioId": "scenario_design_revision",
+      "timestamp": "2026-10-09T14:30:00.000Z",
+      "content": "Logo SVG export is done and uploaded."
+    },
+
+    {
+      "id": "msg_031",
+      "sender": "Liam",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:00:00.000Z",
+      "content": "Hey anyone up for coffee later?"
+    },
+    {
+      "id": "msg_032",
+      "sender": "Mia",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:05:00.000Z",
+      "content": "Haha maybe after the demo! By the way, what time is the final presentation?"
+    },
+    {
+      "id": "msg_033",
+      "sender": "Noah",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:10:00.000Z",
+      "content": "We agreed the final presentation is at 4:30 PM."
+    },
+    {
+      "id": "msg_034",
+      "sender": "Liam",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:15:00.000Z",
+      "content": "What about the slide deck design?"
+    },
+    {
+      "id": "msg_035",
+      "sender": "Mia",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:20:00.000Z",
+      "content": "Update on presentation time: moved to 5:00 PM instead of 4:30 PM."
+    },
+    {
+      "id": "msg_036",
+      "sender": "Noah",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:25:00.000Z",
+      "content": "Who will record the 2-minute video walkthrough?"
+    },
+    {
+      "id": "msg_037",
+      "sender": "Liam",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:30:00.000Z",
+      "content": "I can record it if someone provides the script by 4 PM."
+    },
+    {
+      "id": "msg_038",
+      "sender": "Mia",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:35:00.000Z",
+      "content": "I finished drafting the 2-minute video script."
+    },
+    {
+      "id": "msg_039",
+      "sender": "Noah",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:40:00.000Z",
+      "content": "Nice! Is the Privacy Inspector modal working?"
+    },
+    {
+      "id": "msg_040",
+      "sender": "Liam",
+      "scenarioId": "scenario_messy_casual",
+      "timestamp": "2026-10-09T15:45:00.000Z",
+      "content": "We should double check local storage caching."
+    },
+
+    {
+      "id": "msg_041",
+      "sender": "System",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:00:00.000Z",
+      "content": "  "
+    },
+    {
+      "id": "msg_042",
+      "sender": "Ophelia",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:05:00.000Z",
+      "content": "Testing special chars: <script>alert('xss')</script> & raw JSON: {\"key\":\"value\"}"
+    },
+    {
+      "id": "msg_043",
+      "sender": "Pete",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:10:00.000Z",
+      "content": "We decided to submit the project at 4 PM."
+    },
+    {
+      "id": "msg_044",
+      "sender": "Ophelia",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:15:00.000Z",
+      "content": "Wait, submit time changed to 4:45 PM instead of 4 PM."
+    },
+    {
+      "id": "msg_045",
+      "sender": "Pete",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:20:00.000Z",
+      "content": "Is the repository public or private?"
+    },
+    {
+      "id": "msg_046",
+      "sender": "Ophelia",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:25:00.000Z",
+      "content": "We decided on public GitHub repo."
+    },
+    {
+      "id": "msg_047",
+      "sender": "Pete",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:30:00.000Z",
+      "content": "Task assigned to Ophelia: add MIT license file by 4:15 PM."
+    },
+    {
+      "id": "msg_048",
+      "sender": "Ophelia",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:35:00.000Z",
+      "content": "MIT license added to root directory."
+    },
+    {
+      "id": "msg_049",
+      "sender": "Pete",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:40:00.000Z",
+      "content": "Do we have any remaining unresolved items?"
+    },
+    {
+      "id": "msg_050",
+      "sender": "Ophelia",
+      "scenarioId": "scenario_malformed_edge",
+      "timestamp": "2026-10-09T16:45:00.000Z",
+      "content": "Everything is ready for final review!"
+    }
+  ],
+
+  "groundTruth": {
+    "explicitDecisions": [
+      {
+        "id": "dec_001",
+        "messageId": "msg_003",
+        "topic": "database migration time",
+        "statement": "We decided to execute the DB migration at 6 PM UTC.",
+        "quote": "We decided to execute the DB migration at 6 PM UTC."
+      },
+      {
+        "id": "dec_002",
+        "messageId": "msg_011",
+        "topic": "frontend stack",
+        "statement": "We agreed to use React, Vite, and Tailwind CSS for the frontend.",
+        "quote": "We agreed to use React, Vite, and Tailwind CSS for the frontend."
+      },
+      {
+        "id": "dec_003",
+        "messageId": "msg_013",
+        "topic": "bundler choice",
+        "statement": "We decided on Vite.",
+        "quote": "We decided on Vite."
+      },
+      {
+        "id": "dec_004",
+        "messageId": "msg_021",
+        "topic": "app theme",
+        "statement": "We decided on Light Mode theme initially.",
+        "quote": "We decided on Light Mode theme initially."
+      },
+      {
+        "id": "dec_005",
+        "messageId": "msg_033",
+        "topic": "presentation time",
+        "statement": "We agreed the final presentation is at 4:30 PM.",
+        "quote": "We agreed the final presentation is at 4:30 PM."
+      },
+      {
+        "id": "dec_006",
+        "messageId": "msg_043",
+        "topic": "submission deadline",
+        "statement": "We decided to submit the project at 4 PM.",
+        "quote": "We decided to submit the project at 4 PM."
+      },
+      {
+        "id": "dec_007",
+        "messageId": "msg_046",
+        "topic": "repo visibility",
+        "statement": "We decided on public GitHub repo.",
+        "quote": "We decided on public GitHub repo."
+      }
+    ],
+
+    "suggestionsNotDecisions": [
+      {
+        "messageId": "msg_002",
+        "quote": "What if we delay the migration to 6 PM UTC?"
+      },
+      {
+        "messageId": "msg_012",
+        "quote": "Maybe we could use Next.js instead?"
+      },
+      {
+        "messageId": "msg_022",
+        "quote": "How about purple gradient for cards?"
+      },
+      {
+        "messageId": "msg_031",
+        "quote": "Hey anyone up for coffee later?"
+      },
+      {
+        "messageId": "msg_040",
+        "quote": "We should double check local storage caching."
+      }
+    ],
+
+    "decisionDrift": [
+      {
+        "id": "drift_001",
+        "topic": "database migration time",
+        "driftType": "SUPERSEDED_DECISION",
+        "earlierMessageId": "msg_003",
+        "earlierQuote": "We decided to execute the DB migration at 6 PM UTC.",
+        "mutatedMessageId": "msg_005",
+        "mutatedQuote": "Change from 6 PM to 9 PM UTC instead.",
+        "resolvedValue": "9 PM UTC"
+      },
+      {
+        "id": "drift_002",
+        "topic": "AI model choice",
+        "driftType": "SUPERSEDED_DECISION",
+        "earlierMessageId": "msg_018",
+        "earlierQuote": "Correction on the model choice: We decided on SmolLM2-360M instead of Qwen2.5-1.5B.",
+        "mutatedMessageId": "msg_018",
+        "mutatedQuote": "We decided on SmolLM2-360M instead of Qwen2.5-1.5B.",
+        "resolvedValue": "SmolLM2-360M"
+      },
+      {
+        "id": "drift_003",
+        "topic": "app theme",
+        "driftType": "SUPERSEDED_DECISION",
+        "earlierMessageId": "msg_021",
+        "earlierQuote": "We decided on Light Mode theme initially.",
+        "mutatedMessageId": "msg_023",
+        "mutatedQuote": "scratch Light Mode. We are moving to Dark Mode glassmorphic theme instead.",
+        "resolvedValue": "Dark Mode glassmorphic"
+      },
+      {
+        "id": "drift_004",
+        "topic": "presentation time",
+        "driftType": "SUPERSEDED_DECISION",
+        "earlierMessageId": "msg_033",
+        "earlierQuote": "We agreed the final presentation is at 4:30 PM.",
+        "mutatedMessageId": "msg_035",
+        "mutatedQuote": "moved to 5:00 PM instead of 4:30 PM.",
+        "resolvedValue": "5:00 PM"
+      },
+      {
+        "id": "drift_005",
+        "topic": "submission deadline",
+        "driftType": "SUPERSEDED_DECISION",
+        "earlierMessageId": "msg_043",
+        "earlierQuote": "We decided to submit the project at 4 PM.",
+        "mutatedMessageId": "msg_044",
+        "mutatedQuote": "submit time changed to 4:45 PM instead of 4 PM.",
+        "resolvedValue": "4:45 PM"
+      }
+    ],
+
+    "contradictions": [
+      {
+        "id": "contra_001",
+        "topic": "accent color",
+        "driftType": "GENUINE_CONTRADICTION",
+        "messageId": "msg_024",
+        "quote": "Alice says accent color is Cyan, but Bob says accent color is Emerald."
+      }
+    ],
+
+    "completedTasks": [
+      {
+        "id": "task_comp_001",
+        "messageId": "msg_007",
+        "quote": "I finished verifying the backup script. DB backup check complete."
+      },
+      {
+        "id": "task_comp_002",
+        "messageId": "msg_017",
+        "quote": "I finished writing the unit tests for Chrono Parser."
+      },
+      {
+        "id": "task_comp_003",
+        "messageId": "msg_026",
+        "quote": "I completed the wireframe mockups for Evidence Drawer."
+      },
+      {
+        "id": "task_comp_004",
+        "messageId": "msg_030",
+        "quote": "Logo SVG export is done and uploaded."
+      },
+      {
+        "id": "task_comp_005",
+        "messageId": "msg_038",
+        "quote": "I finished drafting the 2-minute video script."
+      },
+      {
+        "id": "task_comp_006",
+        "messageId": "msg_048",
+        "quote": "MIT license added to root directory."
+      }
+    ],
+
+    "openLoops": [
+      {
+        "id": "loop_001",
+        "type": "UNANSWERED_QUESTION",
+        "messageId": "msg_004",
+        "question": "Who is handling the backup script verification?"
+      },
+      {
+        "id": "loop_002",
+        "type": "UNANSWERED_QUESTION",
+        "messageId": "msg_010",
+        "question": "What is the rollback strategy if step 3 fails?"
+      },
+      {
+        "id": "loop_003",
+        "type": "PENDING_ACTION_ITEM",
+        "messageId": "msg_014",
+        "assignee": "Frank",
+        "deadline": "2026-10-10T14:00:00.000Z",
+        "quote": "Frank, please build the Chat Ingestion Parser by 2 PM tomorrow."
+      },
+      {
+        "id": "loop_004",
+        "type": "UNANSWERED_QUESTION",
+        "messageId": "msg_029",
+        "question": "Did we finalize the logo SVG export?"
+      },
+      {
+        "id": "loop_005",
+        "type": "PENDING_ACTION_ITEM",
+        "messageId": "msg_037",
+        "assignee": "Liam",
+        "deadline": "2026-10-09T16:00:00.000Z",
+        "quote": "I can record it if someone provides the script by 4 PM."
+      },
+      {
+        "id": "loop_006",
+        "type": "UNANSWERED_QUESTION",
+        "messageId": "msg_039",
+        "question": "Is the Privacy Inspector modal working?"
+      },
+      {
+        "id": "loop_007",
+        "type": "UNANSWERED_QUESTION",
+        "messageId": "msg_045",
+        "question": "Is the repository public or private?"
+      },
+      {
+        "id": "loop_008",
+        "type": "UNANSWERED_QUESTION",
+        "messageId": "msg_049",
+        "question": "Do we have any remaining unresolved items?"
+      }
+    ]
+  }
+}
